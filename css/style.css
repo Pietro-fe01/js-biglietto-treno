@@ -47,11 +47,11 @@ header ul a{
     MAIN
 ----------------*/
 main {
-    height: calc(100vh - 28.4px - 200px);
+    height: calc(100vh - 28.4px - 120px);
     overflow-y: auto;
     background-image: url("https://www.trenitalia.com/content/dam/tcom/restyling/homepage/1920x410/1920x410-ICG-Biciclette-11.jpg");
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
 }
 
@@ -63,6 +63,7 @@ main img{
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid black;
     padding: 30px;
+    border-radius: .625rem;
 }
 
 .ticket .ticket-top{
@@ -81,7 +82,7 @@ main img{
 ----------------*/
 footer{
     background: transparent linear-gradient(180deg,#b2b2b2 0,#444 100%);
-    height: 200px;
+    height: 120px;
     color: white;
 }
 
@@ -95,9 +96,28 @@ footer .container div{
 
 footer ul{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 footer ul li a{
     text-decoration: none;
     color: white;
+}
+
+footer ul li a i{
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: .3125rem;
+    min-width: 1.875rem;
+    text-align: center;
+    margin-right: .625rem;
+}
+
+/*--------------
+    EFFECTS
+----------------*/
+nav ul li:hover a{
+    text-decoration: underline;
 }
