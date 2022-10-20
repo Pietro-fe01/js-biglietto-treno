@@ -35,4 +35,4 @@ if(customerAge < 1 || customerAge > 110){
 
 
 const generatorDate= new Date();
-document.getElementById("date").innerHTML = `Biglietto generato il: ${generatorDate}`;
+document.getElementById("date").innerHTML = `Biglietto virtuale generato il: ${generatorDate}`;
