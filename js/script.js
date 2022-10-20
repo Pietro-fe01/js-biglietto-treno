@@ -32,3 +32,7 @@ if(customerAge < 1 || customerAge > 110){
     discountPrice = (ticketPrice) - (ticketPrice * 0.4);
     document.getElementById("new-discounted-price").innerHTML = `Il prezzo scontato della corsa è di ${discountPrice.toFixed(2)} Euro.`;
 }
+
+
+const generatorDate= new Date();
+document.getElementById("date").innerHTML = `Biglietto generato il: ${generatorDate}`;
