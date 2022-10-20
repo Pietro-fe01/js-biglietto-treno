@@ -26,9 +26,9 @@ if(customerAge < 1 || customerAge > 110){
 }else if (customerAge < 18){
     document.getElementById("age-discount").innerHTML = "Congratulazioni! Hai diritto ad uno sconto del 20% sul totale della corsa!";
     discountPrice = (ticketPrice) - (ticketPrice * 0.2);
-    document.getElementById("new-discounted-price").innerHTML = `Il prezzo totale della corsa è di ${discountPrice.toFixed(2)} Euro.`;
+    document.getElementById("new-discounted-price").innerHTML = `Il prezzo scontato della corsa è di ${discountPrice.toFixed(2)} Euro.`;
 } else if (customerAge >= 65){
     document.getElementById("age-discount").innerHTML = "Congratulazioni! Lei ha diritto ad uno sconto del 40% sul totale della corsa!";
     discountPrice = (ticketPrice) - (ticketPrice * 0.4);
-    document.getElementById("new-discounted-price").innerHTML = `Il prezzo totale della corsa è di ${discountPrice.toFixed(2)} Euro.`;
+    document.getElementById("new-discounted-price").innerHTML = `Il prezzo scontato della corsa è di ${discountPrice.toFixed(2)} Euro.`;
 }
